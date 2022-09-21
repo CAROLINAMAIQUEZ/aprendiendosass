@@ -1,0 +1,36 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    display: flex;
+    top: 0;
+}
+nav{
+    display: flex;
+    align-items: flex-end;
+
+     ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        justify-content: right;
+        transition: all 1.5s;
+        
+        li :hover{
+            transform: scale(0.8);
+            a{
+
+                font-family:$font-secundarias2;
+                margin: 10px;
+                color: $color-fontoscuro;
+                font-size: 1.4rem;
+                text-decoration: none;
+                background-color:$coloresbotonesnav;
+                border-radius: 60px;
+                text-shadow: $color-fontoscuro 6px 6px 8px;   
+            
+            }
+        }
+    }
+
+}

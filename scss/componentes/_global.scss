@@ -1,0 +1,260 @@
+
+.galeriacontainer{ 
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap:10px;
+    justify-items: center;
+
+    &{
+        background:$color-fondogeneral;
+        margin: 5px 2px 5px 2px;
+        border-radius: 30px; 
+}
+     & img{
+    border-radius: 50% 20% / 10% 40%;
+    margin: 50px 50px;
+    --img {
+        width: 350px;
+        height: 350px;
+    }
+}
+&:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+}
+
+.areasconsul{
+    font-family:$font-graltextos ;
+    margin: 10px;
+    color: $color-fontoscuro;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-shadow:$color-fontoscuro 6px 6px 8px;  
+    text-align: center;
+  }
+  .parrafo{
+    border-style: inset;
+    font-family:$font-estilosrecuadros ;
+    background-color:$color-secundariofondoclaro;
+    font-style: oblique;
+    text-align: center;
+}
+.p{
+    display: flex;
+    justify-content: center;
+    font-family: $font-graltextos;
+    font-size: larger;
+    color: $color-secundariofondoclaro;
+    border-color: bisque;
+}
+
+.if1{
+    display: flex;
+    margin: 20px 15px;
+    border-radius: 30px;
+    background-color: $color-secundariofondo;
+    justify-content: center;
+}
+a{
+    border-radius: 30px;
+    font-size: 70%;
+    font-family: $font-secundarias;
+    background-color: rgb(161, 158, 150);
+}
+.footer{
+    display: flex;
+    border: none;
+    font-size: 70%;
+    font-family:$font-secundarias ;
+    text-shadow: $color-fontoscuro 6px 6px 8px;
+    text-align: center;
+    justify-content: center;
+}
+.colorfondo{
+    background:$color-fondogeneral ;
+    margin: 5px 2px 5px 2px;
+    border-radius: 30px;
+}
+
+.tacuara{
+ font-variant: initial;
+ font-family:$font-secundarias2 ;
+ background: $color-fondogeneral;
+ margin: 5px 2px 5px 2px;
+ border-radius: 30px;
+ text-align: center;
+
+}
+.leyenda{
+    font-family:$font-leyendas ;
+    background-color: $color-secundariofondo;
+    border-radius: 30px;
+    text-align: center;
+    font-size:medium;
+}
+
+.espaciosdetrabajo{
+    font-family:$font-graltextos ;
+    margin: 10px;
+    color: $color-fontoscuro;
+    font-size: 1.4rem;
+    text-decoration: none;
+    border-radius: 60px;
+    text-shadow: $color-fontoscuro 6px 6px 8px;  
+
+}
+.galeriaconsul{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap:10px;
+    justify-items: center;
+
+    & img{
+        border: 5px solid $color-secundariobordesimagenes;
+        border-radius: 1.5em;
+        border-top-right-radius: 5% 20%;
+    }
+    & :hover{
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+.article{
+    border: none;
+    font-family:$font-secundarias ;
+    text-shadow: $color-fontoscuro 6px 6px 8px;
+
+}
+
+.areas{
+    display: inline-block;
+    font-family: $font-graltextos;
+    margin: 10px;
+    color: $color-fontoscuro;
+    font-size: 1.4rem;
+    text-decoration: none;
+    background-color:$coloresbotonesnav;
+    border-radius: 60px;
+    text-shadow: $color-fontoscuro 6px 6px 8px;  
+}
+.alert{
+    font-family: "Trirong", serif;
+    justify-content: center;
+    background-color:$color-secundariofondo ;
+    text-align:center;
+
+}
+.pilar{
+    font-family:$font-estilosrecuadros;
+    justify-content: center;
+    background-color:$color-secundariofondo ;
+    text-align:center;
+}
+.lainterdisciplina{
+    display:flex ;
+    background: $color-fondogeneral;
+    margin: 5px 2px 5px 2px;
+    border-radius: 30px;
+    margin: 20px 15px;
+    border-radius: 30px;
+    justify-content:center;
+    text-align: center;
+ 
+}
+.tabla{
+    display: flex;
+    font-family: $font-secundarias2;
+    justify-content: center;
+    background-color: $color-secundariofondo;
+    text-align: center;
+}
+.profesionales{
+    font-family: Verdana;
+    font-style: oblique;
+
+}
+.itemsprof{
+    text-align: center;
+    
+}
+.patiofoto{
+    border-radius: 50% 20% / 10% 40%;
+    margin:auto;
+    display:block;
+    width: 500px;
+    height: 400px;
+  
+}
+
+.patiofotocqn :hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+        
+}
+
+.novedadesdisca{
+    display:flex ;
+    background:$color-fondogeneral ;
+    margin: 5px 2px 5px 2px;
+    border-radius: 30px;
+    margin: 20px 15px;
+    border-radius: 30px;
+    justify-content:center;
+    text-align: center;
+    
+
+}
+.acordeoncondatos{
+   border-radius: 20;
+}
+@media screen and (max-width: 768px){
+    
+}
+@media screen and (max-width: 576px) {
+ 
+    header {
+        flex-direction: column;
+        align-items:center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+      }
+    .galeriacontainer{
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    align-items: center;
+    }
+
+    .galeriaconsul{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6, 1fr);
+    }
+
+    .if1{
+    flex-direction: column;
+    align-items: center;
+
+    }
+    div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .novedadesdisca{
+        flex-direction:column;
+        align-items: center;
+    }
+}
