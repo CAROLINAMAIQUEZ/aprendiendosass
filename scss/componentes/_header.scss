@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -9,16 +14,17 @@ nav{
     display: flex;
     align-items: flex-end;
 
-     ul{
+    & ul{
         display: flex;
         flex-wrap: wrap;
         list-style: none;
         justify-content: right;
-        transition: all 1.5s;
-        
-        li :hover{
+        transition: all 1.5s;}
+       
+        & ul :hover{
             transform: scale(0.8);
-            a{
+    }
+            & ul li a{
 
                 font-family:$font-secundarias2;
                 margin: 10px;
@@ -30,7 +36,6 @@ nav{
                 text-shadow: $color-fontoscuro 6px 6px 8px;   
             
             }
-        }
-    }
+          
 
 }
