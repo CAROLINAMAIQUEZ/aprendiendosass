@@ -27,9 +27,7 @@
 .galeriacontainer--img {
     width: 350px;
     height: 350px;
-
   }
-
 }
 
 .areasconsul{
@@ -80,7 +78,7 @@ a{
     justify-content: center;
 }
 .colorfondo{
-    background:$color-fondogeneral ;
+    background-color: map-get($map, bg-ppal ) ;
     margin: 5px 2px 5px 2px;
     border-radius: 30px;
 }
@@ -88,7 +86,7 @@ a{
 .tacuara{
  font-variant: initial;
  font-family:$font-secundarias2 ;
- background: $color-fondogeneral;
+ background-color: map-get($map, bg-ppal ) ;
  margin: 5px 2px 5px 2px;
  border-radius: 30px;
  text-align: center;

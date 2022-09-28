@@ -1,0 +1,12 @@
+%disposicion {
+    display: flex;
+    justify-content: center;
+
+}
+
+.p{
+    @extend %disposicion;
+}
+.if1 { 
+     @extend %disposicion;
+}
