@@ -36,6 +36,7 @@ nav ul li a {
   border-radius: 60px;
   text-shadow: black 6px 6px 8px;
 }
+
 .títuloppal{
     
   color:black;
@@ -44,9 +45,12 @@ nav ul li a {
   text-align: center;
   background-color:   rgb(248, 248, 109);;
   border-radius: 15px;
+  display:inline-block;
 
 }
-
+.carousel-inner{
+  border-radius: 30px;
+}
 .galeriacontainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -67,11 +71,14 @@ nav ul li a {
 .galeriacontainer img {
   border-radius: 50% 20%/10% 40%;
   margin: 50px 50px;
+  
 }
 .galeriacontainer .galeriacontainer--img {
   width: 350px;
   height: 350px;
+
 }
+
 
 .areasconsul {
   font-family: sans-serif;
@@ -85,7 +92,7 @@ nav ul li a {
 
 .parrafo {
   border-style: inset;
-  font-family: "Sofia";
+  font-family: "Trirong";
   background-color: white;
   font-style: oblique;
   text-align: center;
@@ -105,11 +112,22 @@ nav ul li a {
 
 .if1 {
   display: flex;
-  margin: 10px 5px;
-  border-radius: 30px;
+  margin: 5px 5px;
+  padding: 10px 5px;
+  border-radius: 20px;
   background-color: rgb(248, 248, 109);
   justify-content:center;
+  
 }
+.ondas{
+  background-color: rgb(248, 248, 109);
+    --mask: 
+      linear-gradient(#000 0 0) 50%/calc(100% - 55.50px) calc(100% - 55.50px) no-repeat,
+      radial-gradient(farthest-side,#000 98%,#0000) 0 0/60px 60px round;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  
+  }
 
 a {
   border-radius: 30px;
@@ -117,15 +135,106 @@ a {
   font-family: Arial;
   background-color: rgb(161, 158, 150);
 }
+.notayformulario{
+  display: flex;
+  justify-content: center;
+}
+.notepaper {
+  position: relative;
+  margin: 30px auto;
+  padding: 29px 20px 20px 45px;
+  width: 280px;
+  line-height: 30px;
+  color: black;
+  text-shadow: 0 1px 1px white;
+  background-color: #f2f6c1;
+  background-image: -webkit-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -webkit-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+  background-image: -moz-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -moz-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+  background-image: -o-radial-gradient(center, cover, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.1) 90%), -o-repeating-linear-gradient(top, transparent 0%, transparent 29px, rgba(239, 207, 173, 0.7) 29px, rgba(239, 207, 173, 0.7) 30px);
+  border: 1px solid #c3baaa;
+  border-color: rgba(195, 186, 170, 0.9);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), inset 0 0 5px #d8e071, 0 0 1px rgba(0, 0, 0, 0.1), 0 2px rgba(0, 0, 0, 0.02);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), inset 0 0 5px #d8e071, 0 0 1px rgba(0, 0, 0, 0.1), 0 2px rgba(0, 0, 0, 0.02);
+}
 
+.notepaper:before, .notepaper:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.notepaper:before {
+  left: 28px;
+  width: 2px;
+  border: solid #efcfad;
+  border-color: rgba(239, 207, 173, 0.9);
+  border-width: 0 1px;
+}
+
+.notepaper:after {
+  z-index: -1;
+  left: 0;
+  right: 0;
+  background: rgba(242, 246, 193, 0.9);
+  border: 1px solid rgba(170, 157, 134, 0.7);
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  transform: rotate(2deg);
+}
+
+.quote {
+  font-family: "Arial";
+  font-size: 14px;
+}
+
+.curly-quotes:before, .curly-quotes:after {
+  display: inline-block;
+  vertical-align: top;
+  height: 30px;
+  line-height: 48px;
+  font-size: 50px;
+  opacity: .2;
+}
+
+.curly-quotes:before {
+  content: '\201C';
+  margin-right: 4px;
+  margin-left: -8px;
+}
+
+.curly-quotes:after {
+  content: '\201D';
+  margin-left: 4px;
+  margin-right: -8px;
+}
+
+.quote-by {
+  display: block;
+  padding-right: 10px;
+  text-align: right;
+  font-size: 13px;
+  font-style: italic;
+  color: #84775c;
+}
+
+.lt-ie8 .notepaper {
+  padding: 15px 25px;
+}
 .footer {
   display: flex; 
   text-align: center;
   justify-content: center;
   border: none;
-  font-size: 70%;
-  font-family: Arial;
-  text-shadow: black 6px 6px 8px;
+  font-size:medium;
+  font-family:sans-serif;
+  text-shadow: black 4px 4px 6px;
+
 
 }
 
@@ -150,6 +259,19 @@ a {
   border-radius: 30px;
   text-align: center;
   font-size: medium;
+}
+.acordeonitem{
+text-align: center;
+
+}
+.acordeontext{
+  text-align: center;
+  font-family: black "Trirong" ;
+  font-size: medium;
+  flex-wrap: wrap;
+  border-color: rgb(253, 220, 33) ;
+  
+
 }
 
 .espaciosdetrabajo {
@@ -181,9 +303,10 @@ a {
 }
 
 .article {
-  border: none;
-  font-family: Arial;
-  text-shadow: black 6px 6px 8px;
+
+  font-family: Arial ;
+  text-shadow: black 6px 6px 8px; 
+
 }
 
 .areas {
@@ -214,13 +337,10 @@ a {
 
 .lainterdisciplina {
   display: flex;
-  background: linear-gradient(45deg, rgb(210, 255, 82) 0%, rgb(121, 181, 65) 100%);
-  margin: 5px 2px 5px 2px;
-  border-radius: 30px;
-  margin: 20px 15px;
-  border-radius: 30px;
   justify-content: center;
   text-align: center;
+
+
 }
 
 .tabla {
@@ -229,6 +349,8 @@ a {
   justify-content: center;
   background-color: rgb(248, 248, 109);
   text-align: center;
+  border-collapse: separate;
+  border: none;
 }
 
 .profesionales {
@@ -241,7 +363,7 @@ a {
 }
 
 .patiofoto {
-  border-radius: 30%;
+  border-radius: 25%;
   margin: auto;
   padding: 2%;
   display: block;
@@ -253,6 +375,12 @@ a {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+}
+.alertnovedades{
+  font-family: "Trirong" solid;
+  border-radius: 10%;
+  background-color:  rgb(248, 248, 109);
+  text-align: center;
 }
 
 .novedadesdisca {
@@ -269,19 +397,63 @@ a {
 .acordeoncondatos {
   border-radius: 20;
 }
+.tall{
+  font-family: "Verdana";
+  text-decoration: solid;
+  background-color: rgb(253, 220, 33);
+}
+.talleresverano{
+  text-align: center;
+  background: linear-gradient(0deg, rgba(218,210,49,1) 0%, rgba(251,251,176,1) 100%);
+  margin: 5px 2px 5px 2px;
+  border-radius: 30px;
+  margin: 20px 15px;
+  border-radius: 30px;
 
+  
+}
+ul{
+  list-style: none;
+}
+
+.objetivos{
+  font-family: sans-serif solid;
+}
+.veranito{
+  border-radius: 50% 20%/10% 40%;
+  margin: 50px 50px;
+  flex-wrap: wrap;
+  height:300px;
+  width: 300px;
+}
 @media screen and (max-width: 576px) {
   header {
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
   }
-  nav ul {
+  nav ul{
     flex-direction: column;
     justify-content: center;
+    padding-top: 10px;
   }
+  .títuloppal
+{
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.notayformulario{
+  flex-direction: column;
+  justify-content: center;
+}
   footer {
     flex-direction: column;
     align-items: center;
+  }
+  .lainterdisciplina{
+    
+      flex-direction: column;
+      justify-content: center;
+    
   }
   .galeriacontainer {
     grid-template-columns: 1fr;
@@ -295,9 +467,10 @@ a {
   .if1 {
     flex-direction: column;
     align-items: center;
+    
   }
   div {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
   .novedadesdisca {
